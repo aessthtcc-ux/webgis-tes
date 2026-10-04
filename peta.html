@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGIS Desa Srinanti</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- Plugin Day 3: Measure & Search (CSS) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-measure@3.1.0/dist/leaflet-measure.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-search@4.0.0/dist/leaflet-search.min.css">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="halaman.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <a class="brand" href="index.html">WebGIS Desa Srinanti</a>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="peta.html" class="aktif">Peta</a>
+        </nav>
+    </header>
+
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Pembaca GeoTIFF + layer raster untuk Leaflet (untuk landcover.tif) -->
+    <script src="https://unpkg.com/georaster@1.6.0"></script>
+    <script src="https://unpkg.com/georaster-layer-for-leaflet@4.1.2"></script>
+
+    <!-- Plugin Day 3: Measure & Search (JS) - harus setelah Leaflet JS -->
+    <script src="https://unpkg.com/leaflet-measure@3.1.0/dist/leaflet-measure.js"></script>
+    <script src="https://unpkg.com/leaflet-search@4.0.0/dist/leaflet-search.min.js"></script>
+
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

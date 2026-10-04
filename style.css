@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+h1 {
+    margin: 10px 15px;
+    font-size: 22px;
+}
+
+#map {
+    height: 660px;
+}
+
+/* Legenda (dipakai di script.js, bagian Legenda) */
+.legend {
+    background: white;
+    padding: 8px 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.legend b {
+    display: block;
+    margin: 4px 0 2px;
+}
+
+.legend i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    vertical-align: middle;
+    border: 1px solid #555;
+}
+

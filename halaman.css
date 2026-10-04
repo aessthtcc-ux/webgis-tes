@@ -1,0 +1,76 @@
+/* CSS tambahan untuk eksperimen beranda + peta (Day 3).
+   Dimuat SETELAH style.css. */
+
+* { box-sizing: border-box; }
+
+body { background: #f8fafc; color: #1f2937; }
+
+/* ---------- Navbar (dipakai di index.html dan peta.html) ---------- */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    padding: 0 20px;
+    background: #14532d;
+    color: white;
+}
+
+.navbar .brand {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navbar nav a {
+    color: #d1fae5;
+    text-decoration: none;
+    margin-left: 18px;
+    padding: 6px 2px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar nav a:hover,
+.navbar nav a.aktif {
+    color: white;
+    border-bottom-color: #86efac;
+}
+
+/* ---------- Halaman Peta ---------- */
+body.halaman-peta #map {
+    height: calc(100vh - 56px);
+    height: calc(100dvh - 56px);   /* browser mobile modern */
+}
+
+/* ---------- Halaman Beranda ---------- */
+.hero {
+    padding: 56px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #166534, #22c55e);
+    color: white;
+}
+
+.hero h1 {
+    margin: 0 0 10px;
+    font-size: 34px;
+}
+
+.hero p {
+    max-width: 640px;
+    margin: 0 auto 24px;
+    line-height: 1.6;
+}
+
+.tombol {
+    display: inline-block;
+    padding: 12px 26px;
+    background: white;
+    color: #14532d;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 999px;
+}
+
+.tombol:hover { background: #dcfce7; }
+
